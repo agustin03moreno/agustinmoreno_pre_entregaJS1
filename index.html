@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Store</title>
+</head>
+
+<body>
+    <header>
+        <h1>PC Store</h1>
+    </header>
+    <main>
+        <h2>Los Mejores Precios</h2>
+        <section id="productos">
+            <h3>Productos</h3>
+            <ul id="listaProductos"></ul>
+        </section>
+        <section id="carrito">
+            <h2>Carrito</h2>
+            <ul id="listaCarrito"></ul>
+            <button id="btnVaciarCarrito">Vaciar carrito</button>
+            <button id="btnComprar">Comprar</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+    <div id="modalCompra" style="display: none;">
+        <h2>Completa tus datos para comprar</h2>
+        <form id="formularioCompra">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="numeroTarjeta">Número de tarjeta:</label>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" required>
+
+            <label for="cds">Codigo de seguridad:</label>
+            <input type="text" id="cds" name="cds" required>
+
+            <label for="mail">Mail:</label>
+            <input type="text" id="mail" name="mail" required>
+
+            <button type="submit">Confirmar compra</button>
+        </form>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
